@@ -202,7 +202,7 @@ function Spark(mp, channel, id) {
  * Inherits from `EventEmitter`.
  */
 
-Spark.prototype.__proto__ = Stream.prototype;
+Spark.prototype = Object.create(Stream.prototype);
 
 /**
  * `Spark#emit` reference.
